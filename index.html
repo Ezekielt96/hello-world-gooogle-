@@ -1,0 +1,27 @@
+<!--
+  Author:  Ezkeiel D Towner 
+  Class:   Web & Distributed Programming 
+  Project:  Hello World google maps 
+  Session: su18-cpsc-24700-lt1
+  Description: This is our in class activity with a few more implementations. 
+-->
+
+<!doctype html>
+<html lang = en>
+<head>
+  <title>Hello-World</title>
+  <script src="hello-world-google.js"></script>
+  <link rel="stylesheet" href="map-style.css"> 
+  <meta name="viewport" content="initial-scale=1.0">
+  <meta charset="utf-8">
+</head>
+  <body>
+      <h1>Hello World Google Maps</h1>
+      <body onload="initApplication()">  
+      Hint: <input id="hint-id" type="text" value="" size="120" disabled><br><br>
+      Score: <input id="score-id" type="text" value="" size="2" disabled><br><br>
+      <div id="map"></div>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC01FYQIuzs_MD-4-HFiLZFBU6Ccahm9So&callback=initMap"
+      async defer></script>
+   </body>
+  </html>
